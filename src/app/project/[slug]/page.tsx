@@ -101,7 +101,7 @@ function Terreza({params}:any) {
                                     </div>
                                 </Parallax>
                             </div>
-                            <Link href={''}>
+                            <Link href={'/contact'}>
                                 <div className={`items-center border-l-2 border-white flex md:mt-10 backdrop-blur-sm bg-white/30`}>
                                     <div className={montserrat.className}>
                                         <p className={`text-lg px-5 pr-20 text-white`}>Contact us</p>
