@@ -50,22 +50,23 @@ export default function Footer() {
                                         <div className="grid grid-cols-2 md:grid-cols-3 justify-between gap-4 mt-12 text-xl text-white font-bold w-full">
                                             <div className={montserrat.className}>
                                                 <div className={`flex flex-col gap-2`}>
-                                                    <Link href="/">PROJECTS</Link>
-                                                    <Link href="/">PROCESS</Link>
-                                                    <Link href="/">ABOUT US</Link>
+                                                    <Link href="/projects">PROJECTS</Link>
+                                                    <Link href="/contact">CONTACT</Link>
+                                                    <Link href="/about">ABOUT US</Link>
                                                 </div>
                                             </div>
                                             <div className={montserrat.className}>
                                                 <div className={`flex flex-col gap-2`}>
-                                                    <Link href="/">PROJECTS</Link>
+                                                    <Link href="/services">SERVICES</Link>
                                                     <Link href="/">+2348109048411</Link>
                                                     <Link href="/">ABUJA, NIGERIA</Link>
                                                 </div>
                                             </div>
                                             <div className={montserrat.className}>
                                                 <div className={`flex flex-col gap-2`}>
-                                                    <Link href="/">INSTAGRAM</Link>
-                                                    <Link href="/">FACEBOOK</Link>
+                                                    <Link href="https://www.instagram.com/odernixhomes/">INSTAGRAM</Link>
+                                                    <Link href="https://m.facebook.com/profile.php/?id=61552290001830&name=xhp_nt__fb__action__open_user">FACEBOOK</Link>
+                                                    <Link href="https://x.com/odernixhomes/status/1697532380557283552?s=46&t=gb-U55UG8h08BivbQobz1w">X</Link>
                                                 </div>
                                             </div>
                                         </div>

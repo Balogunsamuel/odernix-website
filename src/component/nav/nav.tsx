@@ -103,7 +103,7 @@ export default function Nav({style}:navigate) {
                                         </div>
                                     </div>
 
-                                        <div className={` md:flex`}>
+                                        <div className={`hidden md:flex`}>
                                             <div className={`flex gap-2 alignCenter items-center border-l-2 border-white backdrop-blur-sm bg-white/30`}>
                                                 <div className={`alignCenter px-5`}>
                                                     <Link href='/contact' onClick={() => setOpenNav(!openNav)}>
@@ -117,7 +117,7 @@ export default function Nav({style}:navigate) {
                                     <div className={`flex `}>
                                         <div className={``}>
 
-                                            <ul className={`flex flex-col w-full gap-5 md:gap-7 md:text-7xl text-2xl md:text-8xl backdrop-blur-sm`}>
+                                            <ul className={`flex flex-col w-full gap-5 md:gap-7 px-5 md:px-0 text-5xl md:text-8xl backdrop-blur-sm`}>
                                                 {navigation.map((item, index) => (
                                                     <div key={item.name} className={`my-6`}>
                                                         <div className={comorant_garamond.className}>
