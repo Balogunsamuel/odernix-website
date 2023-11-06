@@ -23,7 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
           <body className={inter.className}>
+          <Nav style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex:9999, marginTop:'8px' }} />
+
               {children}
+          <Footer/>
+
           </body>
     </html>
   )
