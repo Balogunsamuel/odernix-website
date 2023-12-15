@@ -58,7 +58,7 @@ export default function Footer() {
                                             <div className={montserrat.className}>
                                                 <div className={`flex flex-col gap-2`}>
                                                     <Link href="/services">SERVICES</Link>
-                                                    <Link href="/">+2348109048411</Link>
+                                                    <Link href="/">+234 912 899 9972</Link>
                                                     <Link href="/">ABUJA, NIGERIA</Link>
                                                 </div>
                                             </div>
