@@ -57,7 +57,7 @@ function Projects(props: {}) {
     };
 
     fetchProjects();
-  }, []); // Runs once when component mounts
+  }, [setProjects]); // Runs once when component mounts
 
   function truncateText(text: string, maxLength: number) {
     return text.length <= maxLength ? text : text.slice(0, maxLength) + "...";
