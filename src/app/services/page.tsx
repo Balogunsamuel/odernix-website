@@ -1,159 +1,139 @@
 "use client";
 
-import React from 'react';
-import * as url from "url";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {Bodoni_Moda, Montserrat} from 'next/font/google';
-import {comorant_garamond, inter, montserrat, montserrat_bold} from "@/utils/fonts";
-import { motion } from 'framer-motion';
-import img1 from '../../public/img1.png';
-import img2 from '../../../public/bastion.jpg';
-import img3 from '../../../public/bastion2.jpg';
-import img4 from '../../../public/terraza.jpg';
-import {Parallax} from "react-scroll-parallax";
-import logo3 from "../../../public/logo-s-white.png";
-import dynamic from 'next/dynamic';
-import ProjectData from "@/server-actions/projects.json";
+import { motion } from "framer-motion";
+import { Parallax } from "react-scroll-parallax";
+import dynamic from "next/dynamic";
 import NextNProgress from "nextjs-progressbar";
+import logo3 from "../../../public/logo-s-white.png";
+import ProjectData from "@/server-actions/projects.json";
+import {
+  comorant_garamond,
+  inter,
+  montserrat,
+  montserrat_bold,
+} from "@/utils/fonts";
 
-const ParallaxProvider = dynamic( () => import('../ParallaxProvider'), { ssr: false } );
+const ParallaxProvider = dynamic(() => import("../ParallaxProvider"), {
+  ssr: false,
+});
 
 interface ProjectDataProp {
-    id: number;
-    name: string;
-    sub: string;
-    description: string;
-    location: string;
-    image: string;
-    status: string;
-    projectDetails: string;
-    deliveryDate: string;
-    projectType: number;
-    propertyNumber: number;
-    propertyType: string[];
-    gallery: string[];
-
+  id: number;
+  name: string;
+  sub: string;
+  description: string;
+  location: string;
+  image: string;
+  status: string;
+  projectDetails: string;
+  deliveryDate: string;
+  projectType: number;
+  propertyNumber: number;
+  propertyType: string[];
+  gallery: string[];
 }
-const resources = [
-    {
-        title: "Human Resources",
-        description: "We Excel In Our Services Because We Ensure That All Our Operations And Management Personnel Are Reliable, Qualified And Competent\n" +
-            "This Enhances Good Performance And Standard Workmanship"
-    },
-    {
-        title: "Recruitments",
-        description: "Our recruitment policy is open and at the same time focused, we know what we want and we go for it, our objectives never change, which is to deliver top quality service in a lean and efficient way"
-    },
-    {
-        title: "Training",
-        description: "A high premium is also attached to the training of all categories of our personnel to keep them abreast with improved technological techniques and skill as well as construction (material and equipment) products."
-    },
-    {
-        title: "Experience",
-        description: "Our institutional working experience in the Construction Sector spans over a ten (10) year period. It is collective and practicable. Rainbow Heritage also participates frequently in joint venture constructions in multiple markets"
-    },
-    {
-        title: "Infrastructure",
-        description: "Rainbow Heritage Projects Service Limited owns, maintains and operates basic operational infrastructure e.g. Jetty, mobile site offices, warehouses and workshops and yards with accompanying utilities."
-    },
-    {
-        title: "Equipment",
-        description: "Our Reliance and utilization of innovative state-of-the art construction tools and equipment enables us invest in quality equipment and tools by outright purchase, lease or hire depending on the prevailing economic advantage."
-    }
-]
-async function Projects(props: {}) {
-    const [projects, setProjects] = React.useState<ProjectDataProp[]>([]);
-    console.log(ProjectData)
-    function truncateText(text: string, maxLength: number) {
-        if (text.length <= maxLength) {
-            return text;
-        } else {
-            // Truncate the text and add ellipses
-            return text.slice(0, maxLength) + '...';
-        }
-    }
-    return (
-        <div>
-            <NextNProgress color={`#321a3f`}/>
 
-        <ParallaxProvider>
-            {/*<ul className="grid_lines w-full flex absolute z-50 justify-between">*/}
-            {/*    <li className="grid_line"></li>*/}
-            {/*    <li className="grid_line"></li>*/}
-            {/*    <li className="grid_line"></li>*/}
-            {/*    <li className="grid_line"></li>*/}
-            {/*    <li className="grid_line"></li>*/}
-            {/*</ul>*/}
-            <section className=" relative flex flex-col items-center justify-center overflow-hidden ">
-                <div className="relative h-full w-full z-30  text-2xl text-white bg-main bg-opacity-50">
-                    <div className="flex flex-row mt-20 h-full container z-20 mx-auto relative">
+const services = [
+  {
+    title: "Real Estate Development",
+    description:
+      "We design, build, and manage premium real estate projects, ensuring top-tier quality and sustainable urban development.",
+  },
+  {
+    title: "Investment Opportunities",
+    description:
+      "Partner with us for profitable and sustainable real estate investments, guided by expert analysis and strategic planning.",
+  },
+  {
+    title: "Consulting Services",
+    description:
+      "We provide expert advice on property acquisition, development strategies, and market trends to help you maximize value.",
+  },
+  {
+    title: "Innovative Construction Solutions",
+    description:
+      "Leveraging the latest technology and best practices, we deliver efficient, durable, and cost-effective building solutions.",
+  },
+];
 
-                    </div>
+function Projects() {
+  const [projects, setProjects] = useState<ProjectDataProp[]>([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch("/api/projects"); // Replace with your actual API
+        const data = await response.json();
+        setProjects(data);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      }
+    };
+    fetchProjects();
+  }, []);
+
+  return (
+    <div>
+      <NextNProgress color={`#321a3f`} />
+      <ParallaxProvider>
+        {/* Hero Section */}
+        <section className="relative flex flex-col items-center justify-center overflow-hidden bg-main text-white py-32">
+          <div className="container mx-auto text-center">
+            <h1 className="text-5xl md:text-7xl font-bold">Our Services</h1>
+            <p className="mt-5 text-lg md:text-xl max-w-3xl mx-auto">
+              Transforming spaces with innovation, expertise, and a commitment
+              to excellence in real estate and construction.
+            </p>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="container mx-auto py-20 px-5 md:px-0">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                className="shadow-lg border border-gray-200 p-8 rounded-lg text-center bg-white hover:shadow-2xl transition-transform transform hover:scale-105"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="text-4xl font-bold text-main mb-5">
+                  {index + 1}
                 </div>
+                <h3 className="text-2xl font-semibold mb-3 text-gray-800">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600">{service.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </section>
 
-
-            </section>
-            <section className=" relative flex flex-col items-center justify-center overflow-hidden ">
-                <div className="relative h-full w-full z-30 py-20 md:py-32 bg-opacity-50">
-                    <div className="flex flex-col px-3 md:px-0 md:flex-row h-full container z-20 mx-auto relative">
-                        <div className="md:w-7/12  h-full flex flex-col justify-between">
-                            <div className="text-xl text-center">
-                            </div>
-                            <div className="flex flex-col items-start">
-                                <div className={comorant_garamond.className}>
-                                    <h1 className="text-5xl md:text-7xl text_main_color">
-                                        Our Services
-                                    </h1>
-                                </div>
-                                <div className={montserrat.className}>
-                                    <div className={`pt-5 lg:w-10/12`}>
-                                        We invest across Nigeria,
-                                        focusing on Locations where our team has experience and where
-                                        there is scope to aggregate assets in our target sectors.
-                                        Wherever we invest, we partner with highly skilled management teams to build
-                                        leading real estate businesses.
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className=" h-full flex justify-end w-full md:w-5/12">
-                            <div className={`absolute right-0 top-20`}>
-                                <Image src={logo3} alt="" className={`w-72 opacity-10`}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className={`min-h-screen-75 relative  `}>
-                <div className={`container mx-auto min-h-screen-75 pb-20 px-2 md:px-0`}>
-                    <div className={`flex flex-col justify-center h-full mt-10`}>
-                        <div className={`grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 mt-20 gap-7 md:gap-16`}>
-                            {resources.map((resource, index) => (
-                                <div
-                                    key={index}
-                                    className={`h-96 border flex flex-col justify-center items-center relative border-main bg-white hover:shadow-2xl cursor-pointer transition delay-150 mt-10`}
-                                >
-                                    <div className={`rounded-full flex items-center justify-center absolute -mt-9 top-0 bg-main p-3 h-16 w-16 text-white`}>
-                                        <p className={`items-center font-semibold text-xl`}>
-                                            {index + 1}
-                                        </p>
-                                    </div>
-                                    <div className={`flex flex-col h-full justify-center items-center px-10 md:px-16 text-lg`}>
-                                        <p className={`font-semibold text-xl self-start pb-5`}>{resource.title}</p>
-                                        <p>{resource.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </ParallaxProvider>
-        </div>
-    );
+        {/* Call-to-Action */}
+        <section className="bg-gray-100 py-16">
+          <div className="container mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-800">
+              Ready to Build the Future with Us?
+            </h2>
+            <p className="mt-5 text-lg text-gray-600 max-w-2xl mx-auto">
+              Whether you're looking to develop, invest, or consult, we’re here
+              to make your vision a reality.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-8 inline-block bg-main text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-opacity-90 transition"
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </section>
+      </ParallaxProvider>
+    </div>
+  );
 }
 
 export default Projects;

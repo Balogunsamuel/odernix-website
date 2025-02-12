@@ -1,72 +1,65 @@
 {
-"ProjectData":[
-  {
-    "id": 1,
-    "name": "The Bastion",
-    "sub": "The Touch of Paradice",
-    "description": "The Bastion is a server for the Republic guilds of the Harbinger server in Star Wars: The Old Republic. We are a community of guilds and players that have been playing together since the game launched in 2011.",
-    "address": "Durumi, Abuja",
-    "lat": 9.0223,
-    "lng": 7.4671,
-    "status": "to be completed by 2025",
-    "image": "/bastion.jpg",
-    "subAlt": "Elegance and Comfort",
-    "projectDetails": "The Bastion is a server for the Republic guilds of the Harbinger server in Star Wars: The Old Republic. We are a community of guilds and players that have been playing together since the game launched in 2011.",
-    "deliveryDate": "4th quarter 2023",
-    "projectType": "Residential",
-    "propertyNumber": "12",
-    "propertyType": ["Duplex", "Terrace", "Bungalow"],
-    "gallery": [
-      "https://i.imgur.com/5ZQJ3ZM.jpg",
-      "https://i.imgur.com/5ZQJ3ZM.jpg",
-      "https://i.imgur.com/5ZQJ3ZM.jpg"
-    ],
-    "slug": "the-bastion"
-  },
-  {
-    "id": 2,
-    "name": "The Bastion 2",
-    "sub": "The Touch of Paradice",
-    "description": " A Modern Oasis of Flats Living! It’s an eloquent block of flats with a police post. It is highly secured\n                                            with fabulous estate features in a beautiful community. It has 18 units of\n                                            3-bedroom apartments and 12 blocks of 2-bedroom apartments.",
-    "address": "Durumi, Abuja",
-    "lat": 9.0223,
-    "lng": 7.4671,
-    "status": "to be completed by 2025",
-    "image": "/bastion2.jpg",
-    "subAlt": "Elegance and Comfort",
-    "projectDetails": "The Bastion is a server for the Republic guilds of the Harbinger server in Star Wars: The Old Republic. We are a community of guilds and players that have been playing together since the game launched in 2011.",
-    "deliveryDate": "4th quarter 2023",
-    "projectType": "Residential",
-    "propertyNumber": "12",
-    "propertyType": ["Duplex", "Terrace", "Bungalow"],
-    "gallery": [
-      "https://i.imgur.com/5ZQJ3ZM.jpg",
-      "https://i.imgur.com/5ZQJ3ZM.jpg",
-      "https://i.imgur.com/5ZQJ3ZM.jpg"
-    ],
-    "slug": "the-bastion-2"
-  },
-  {
-    "id": 3,
-    "name": "Terraza",
-    "sub": "The Touch of Paradice",
-    "description": "Terraza embodies the art of outdoor living. Our homes feature stunning terraces, where you can bask in the beauty of nature and enjoy the open sky from the comfort of your own abode. It consists of units of 4-bedroom semidetached Duplexes and 4 units of 4-bedroom terrace duplexes",
-    "address": "Durumi, Abuja",
-    "lat": 9.0223,
-    "lng": 7.4671,
-    "status": "to be completed by 2025",
-    "image": "/terraza.jpg",
-    "subAlt": "Elegance and Comfort",
-    "projectDetails": "The Bastion is a server for the Republic guilds of the Harbinger server in Star Wars: The Old Republic. We are a community of guilds and players that have been playing together since the game launched in 2011.",
-    "deliveryDate": "4th quarter 2023",
-    "projectType": "Residential",
-    "propertyNumber": "12",
-    "propertyType": ["Duplex", "Terrace", "Bungalow"],
-    "gallery": [
-      "https://i.imgur.com/5ZQJ3ZM.jpg",
-      "https://i.imgur.com/5ZQJ3ZM.jpg",
-      "https://i.imgur.com/5ZQJ3ZM.jpg"
-    ],
-    "slug": "terraza"
-  }
-]}
+  "ProjectData": [
+    {
+      "id": 1,
+      "name": "The Bastion",
+      "sub": "The Touch of Paradice",
+      "description": "The Bastion transcends mere linguistic symbolism; It is an emblematic embodiment of impregnable security, a testament to an unyielding fortress of protection. Within the confines of our intricately crafted abodes, this essence is lovingly encapsulated, bequeathing upon us a serene sanctuary amidst the tapestry of urban life.",
+      "address": "Durumi, Abuja",
+      "lat": 9.0223,
+      "lng": 7.4671,
+      "status": "to be completed by 2025",
+      "image": "/bastion.jpg",
+      "subAlt": "Elegance and Comfort",
+      "projectDetails": "4 Bedrooms Semi Detached Duplexes + BQ",
+      "deliveryDate": "4th quarter 2025",
+      "projectType": "Residential",
+      "propertyNumber": "8 uints",
+      "propertyType": ["Duplex", "Terrace"],
+      "gallery": ["/bastion3.jpg", "/basttion5.jpg"],
+      "slug": "the-bastion"
+    },
+    {
+      "id": 2,
+      "name": "The Bastion 2",
+      "sub": "The Touch of Paradice",
+      "description": " A Modern Oasis of Flats Living! It’s an eloquent block of flats with a police post. It is highly secured\n                                            with fabulous estate features in a beautiful community. It has 16 units of\n                                            3-bedroom apartments and 12 flats of 2-bedroom apartments 4 flats.",
+      "address": "Durumi, Abuja",
+      "lat": 9.0223,
+      "lng": 7.4671,
+      "status": "to be completed by 2025",
+      "image": "/bastion2.jpg",
+      "subAlt": "Elegance and Comfort",
+      "projectDetails": "3 Bedroom Apartment with BQ and elevator & 2 Bedroom Apartment with BQ and elevator",
+      "deliveryDate": "4th quarter 2025",
+      "projectType": "Residential",
+      "propertyNumber": "16 units",
+      "propertyType": ["Apartments"],
+      "gallery": ["/bastion4.jpg", "/bastion6.jpg"],
+      "slug": "the-bastion-2"
+    },
+    {
+      "id": 3,
+      "name": "Terraza",
+      "sub": "The Touch of Paradice",
+      "description": "With Ardent Italian inspiration, Terraza exemplifies thesublime essence of outdoor living, masterfully entwiningthe splendour of nature with the essence of refineddwelling. Within our residences, one discovers an array ofresplendent terraces, veritable havens where the soul mayluxuriate in the enchanting vista of the world's untamedmagnificence while being cradled in the embrace of theirown cherished abode.",
+      "address": "Durumi, Abuja",
+      "lat": 9.0223,
+      "lng": 7.4671,
+      "status": "Completed",
+      "image": "/terraza.jpg",
+      "subAlt": "Elegance and Comfort",
+      "projectDetails": "Our project, The Terrazza by Odernix Homes, is an apartment complex developed at Plot 642 Durumi, Federal Capital TerritoryAbuja. The Terrazza by Odernix Homes includes the construction of two separate buildings: a semi-detached terrace building with two units and another terrace building with four units for six (6) units. It started in September 2023 and completed in November 2024.",
+      "deliveryDate": "4th quarter 2024",
+      "projectType": "Residential",
+      "propertyNumber": "6 units",
+      "propertyType": ["Duplex", "Terrace"],
+      "gallery": [
+        "https://i.imgur.com/5ZQJ3ZM.jpg",
+        "https://i.imgur.com/5ZQJ3ZM.jpg",
+        "https://i.imgur.com/5ZQJ3ZM.jpg"
+      ],
+      "slug": "terraza"
+    }
+  ]
+}

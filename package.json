@@ -4,12 +4,14 @@
   "description": "Odernix Homes",
   "private": true,
   "scripts": {
-    "dev": "PORT=3003 next dev",
+    "dev": "cross-env PORT=3003 next dev",
     "build": "next build",
-    "start": "PORT=3003 next start",
+    "start": "cross-env PORT=3003 next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@react-google-maps/api": "^2.20.5",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.3",
@@ -21,11 +23,11 @@
     "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
-    "@iconify/icons-mdi": "^1.2.47",
-    "@iconify/react": "^4.1.1",
+    "@iconify/icons-mdi": "^1.2.48",
+    "@iconify/react": "^5.2.0",
     "@types/bcryptjs": "^2.4.5",
     "@types/crypto-js": "^4.1.1",
-    "@types/google-map-react": "^2.1.8",
+    "@types/google-map-react": "^2.1.10",
     "@types/jsonwebtoken": "^9.0.4",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.13",
@@ -34,6 +36,7 @@
     "@types/video-react": "^0.15.1",
     "autoprefixer": "^10",
     "axios": "^0.25.0",
+    "cross-env": "^7.0.3",
     "crypto-js": "^4.1.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
