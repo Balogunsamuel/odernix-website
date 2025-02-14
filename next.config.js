@@ -7,7 +7,6 @@ const nextConfig = {
   },
   experimental: {
     webpackBuildWorker: true,
-    optimizeFonts: false,
   },
 };
 

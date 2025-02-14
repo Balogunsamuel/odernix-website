@@ -6,7 +6,6 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { comorant_garamond, montserrat } from "@/utils/fonts";
 import Map from "@/component/map/map";
 import { Icon } from "@iconify/react";
-import { mdiPhone } from "@mdi/js";
 import email from "@iconify/icons-mdi/email";
 import phoneIcon from "@iconify/icons-mdi/phone";
 import locationIcon from "@iconify/icons-mdi/map-marker";
@@ -29,6 +28,8 @@ export default function Page() {
     lat: 9.078779,
     lng: 7.461789,
   };
+
+  const [selectedOption, setSelectedOption] = useState("option1");
 
   return (
     <div>
@@ -100,16 +101,19 @@ export default function Page() {
                   className="p-3 rounded-md border bg-white/80 text-black focus:outline-none focus:ring-2 focus:ring-white w-full"
                 />
                 <select
+                  value={selectedOption}
+                  onChange={(e) => setSelectedOption(e.target.value)}
                   name="tour"
                   required
                   className="p-3 rounded-md border bg-white/80 text-black focus:outline-none focus:ring-2 focus:ring-white w-full"
                 >
-                  <option value="" disabled selected>
+                  <option value="" disabled>
                     Book a Tour
                   </option>
                   <option value="yes">Yes, I want to book a tour</option>
                   <option value="no">No, I don’t want a tour</option>
                 </select>
+
                 <button
                   type="submit"
                   className="bg-white text-black p-3 rounded-md hover:bg-gray-200"
@@ -136,7 +140,9 @@ export default function Page() {
                 </div>
                 <div className="flex items-center gap-2 p-3 bg-black/40 rounded-md cursor-pointer hover:translate-y-1 transition-transform">
                   <Icon icon={locationIcon} className="w-6 h-6 text-white" />
-                  <p className="text-white">29b N’djamena Crescent, Abuja</p>
+                  <p className="text-white">
+                    A4, 29b N’djamena Crescent, Wuse 2, Abuja
+                  </p>
                 </div>
               </div>
             </div>

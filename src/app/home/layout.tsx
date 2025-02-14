@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Odernix homes",
-  description: "home",
+  description: "Odernix home page",
 };
 
 export default function RootLayout({
@@ -18,20 +18,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Nav
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            zIndex: 9999,
-            marginTop: "8px",
-          }}
-        />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
-      </body>
-    </html>
+    <div className={inter.className}>
+      <Nav
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 9999,
+          marginTop: "8px",
+        }}
+      />
+      <Suspense fallback={<Loading />}>{children}</Suspense>
+    </div>
   );
 }
