@@ -87,8 +87,9 @@ export default function Footer() {
                   </div>
                   <div className={montserrat.className}>
                     <p className={`py-5 text-xl`}>
-                      Real Estate Development <br /> Investments <br />{" "}
-                      Consultancy <br /> Innovations{" "}
+                      Real Estate Development <br />
+                      Enigineering <br /> Consultancy <br /> Investments <br />{" "}
+                      Innovations{" "}
                     </p>
                     <p className={`mt-10 text-sm`}>
                       © All rights reserved to Odernix home |{" "}

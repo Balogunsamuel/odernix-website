@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { comorant_garamond, montserrat } from "@/utils/fonts";
-import Map from "@/component/map/map";
+/* import Map from "@/component/map/map"; */
 import { Icon } from "@iconify/react";
 import email from "@iconify/icons-mdi/email";
 import phoneIcon from "@iconify/icons-mdi/phone";

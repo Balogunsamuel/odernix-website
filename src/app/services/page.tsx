@@ -1,139 +1,93 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { Parallax } from "react-scroll-parallax";
-import dynamic from "next/dynamic";
-import NextNProgress from "nextjs-progressbar";
-import logo3 from "../../../public/logo-s-white.png";
-import ProjectData from "@/server-actions/projects.json";
-import {
-  comorant_garamond,
-  inter,
-  montserrat,
-  montserrat_bold,
-} from "@/utils/fonts";
+import { Inter } from "next/font/google";
+import React, { useLayoutEffect, useRef, useState } from "react";
+import { comorant_garamond, montserrat } from "@/utils/fonts";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
+import Contacts from "@/component/contact/contacts";
 
-const ParallaxProvider = dynamic(() => import("../ParallaxProvider"), {
-  ssr: false,
-});
+const inter = Inter({ subsets: ["latin"] });
 
-interface ProjectDataProp {
-  id: number;
-  name: string;
-  sub: string;
-  description: string;
-  location: string;
-  image: string;
-  status: string;
-  projectDetails: string;
-  deliveryDate: string;
-  projectType: number;
-  propertyNumber: number;
-  propertyType: string[];
-  gallery: string[];
-}
+export default function Index() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playVideo, setPlayVideo] = useState(false);
+  const onClick = () => setPlayVideo(true);
 
-const services = [
-  {
-    title: "Real Estate Development",
-    description:
-      "We design, build, and manage premium real estate projects, ensuring top-tier quality and sustainable urban development.",
-  },
-  {
-    title: "Investment Opportunities",
-    description:
-      "Partner with us for profitable and sustainable real estate investments, guided by expert analysis and strategic planning.",
-  },
-  {
-    title: "Consulting Services",
-    description:
-      "We provide expert advice on property acquisition, development strategies, and market trends to help you maximize value.",
-  },
-  {
-    title: "Innovative Construction Solutions",
-    description:
-      "Leveraging the latest technology and best practices, we deliver efficient, durable, and cost-effective building solutions.",
-  },
-];
-
-function Projects() {
-  const [projects, setProjects] = useState<ProjectDataProp[]>([]);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch("/api/projects"); // Replace with your actual API
-        const data = await response.json();
-        setProjects(data);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      }
-    };
-    fetchProjects();
-  }, []);
+  useLayoutEffect(() => {
+    if (videoRef.current) videoRef.current.play();
+  }, [playVideo]);
 
   return (
-    <div>
-      <NextNProgress color={`#321a3f`} />
-      <ParallaxProvider>
-        {/* Hero Section */}
-        <section className="relative flex flex-col items-center justify-center overflow-hidden bg-main text-white py-32">
-          <div className="container mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold">Our Services</h1>
-            <p className="mt-5 text-lg md:text-xl max-w-3xl mx-auto">
-              Transforming spaces with innovation, expertise, and a commitment
-              to excellence in real estate and construction.
-            </p>
-          </div>
-        </section>
-
-        {/* Services Section */}
-        <section className="container mx-auto py-20 px-5 md:px-0">
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                className="shadow-lg border border-gray-200 p-8 rounded-lg text-center bg-white hover:shadow-2xl transition-transform transform hover:scale-105"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="text-4xl font-bold text-main mb-5">
-                  {index + 1}
+    <>
+      <ul className="grid_lines w-full flex absolute z-50 justify-between">
+        <li className="grid_line"></li>
+        <li className="grid_line"></li>
+        <li className="grid_line"></li>
+        <li className="grid_line"></li>
+        <li className="grid_line"></li>
+      </ul>
+      <section className="relative flex items-center justify-center overflow-hidden min-h-screen">
+        <div className="relative h-full w-full z-30 p-5 text-white main-gradient bg-opacity-50">
+          <div className="flex flex-col md:flex-row h-full container z-20 mx-auto relative">
+            <div className="md:w-7/12 h-full flex flex-col justify-between">
+              <div className="text-xl text-white text-center"></div>
+              <div className="flex flex-col pt-16 items-start">
+                <div className={comorant_garamond.className}>
+                  <h1 className="home_main_text text-center md:text-left">
+                    Welcome to Odernix Homes
+                  </h1>
                 </div>
-                <h3 className="text-2xl font-semibold mb-3 text-gray-800">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600">{service.description}</p>
-              </motion.div>
-            ))}
+                <Link href="/contact">
+                  <div className="items-center border-l-2 border-white flex mt-10 backdrop-blur-sm bg-white/30 p-2 md:p-4 w-full md:w-auto">
+                    <div className={montserrat.className}>
+                      <p className="text-lg px-5 text-white">Get started</p>
+                    </div>
+                    <div className="bg-white text-black flex justify-center items-center p-5">
+                      <div className="transform hover:translate-x-3 transition duration-500 ease-in-out">
+                        <BsArrowRight className="h-6 w-6" />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="pb-2 md:pb-10">
+                <Contacts />
+              </div>
+            </div>
+            <div className="h-full flex justify-end hidden md:flex">
+              <div className="absolute right-0 bottom-20 md:bottom-60 w-full md:w-80">
+                <div className={montserrat.className}>
+                  <div className="items-center border-l-2 border-white flex backdrop-blur-sm bg-white/30 p-4">
+                    <p className="text-lg text-white">
+                      Odernix Homes stands out in the real estate sector with
+                      its unique approach that integrates advanced engineering
+                      solutions, expert consultancy services, strategic
+                      investment approaches, and innovative technologies. Our
+                      comprehensive methodology is designed to cater to our
+                      clients' varied needs, promote sustainable growth, and
+                      maximize project value.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-
-        {/* Call-to-Action */}
-        <section className="bg-gray-100 py-16">
-          <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-800">
-              Ready to Build the Future with Us?
-            </h2>
-            <p className="mt-5 text-lg text-gray-600 max-w-2xl mx-auto">
-              Whether you're looking to develop, invest, or consult, we’re here
-              to make your vision a reality.
-            </p>
-            <Link
-              href="/contact"
-              className="mt-8 inline-block bg-main text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-opacity-90 transition"
-            >
-              Get in Touch
-            </Link>
-          </div>
-        </section>
-      </ParallaxProvider>
-    </div>
+        </div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover"
+          onLoadedMetadata={(e) => (e.target as HTMLVideoElement).play()}
+          ref={videoRef}
+          onClick={onClick}
+        >
+          <source src="/head_video2.mp4" type="video/mp4" />
+        </video>
+      </section>
+    </>
   );
 }
-
-export default Projects;

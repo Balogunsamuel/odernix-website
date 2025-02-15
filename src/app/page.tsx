@@ -35,13 +35,7 @@ export default function Index() {
               <div className="text-xl text-white text-center"></div>
               <div className="flex flex-col pt-16 items-start">
                 <div className={comorant_garamond.className}>
-                  <h1 className="home_main_text">
-                    Awe-Inspiring
-                    <br />
-                    Buildings to
-                    <br />
-                    Choose from
-                  </h1>
+                  <h1 className="home_main_text">Welcome to Odernix Homes</h1>
                 </div>
 
                 <Link href="/contact">
@@ -76,8 +70,14 @@ export default function Index() {
                     className={`items-center border-l-2 border-white flex  w-80 flex backdrop-blur-sm bg-white/30`}
                   >
                     <p className={`text-lg p-5 text-white`}>
-                      Travelers today seek more than just a place to stay – they
-                      crave an experience that is beyond the ordinary.
+                      Transforming Real Estate Through Engineering, Consultancy,
+                      and Innovation Odernix Homes stands out in the real estate
+                      sector with its unique approach that integrates advanced
+                      engineering solutions, expert consultancy services,
+                      strategic investment approaches, and innovative
+                      technologies. Our comprehensive methodology is designed to
+                      cater to our client's varied needs, promote sustainable
+                      growth, and maximize project value
                     </p>
                   </div>
                 </div>

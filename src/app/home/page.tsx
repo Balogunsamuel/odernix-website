@@ -38,7 +38,7 @@ export default function Index() {
               <div className="flex flex-col pt-16 items-start">
                 <div className={comorant_garamond.className}>
                   <h1 className="home_main_text">
-                    Awe-Inspiring
+                  Welcome to Odernix Homes
                     <br />
                     Buildings to
                     <br />
