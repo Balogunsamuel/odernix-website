@@ -1,5 +1,5 @@
-import React from "react";
-import GoogleMapReact from "google-map-react"; // Remove the Props import, as it's not needed
+/* import React from "react";
+import GoogleMapReact from 'google-map-react';
 import { Icon } from "@iconify/react";
 import locationIcon from "@iconify/icons-mdi/map-marker";
 
@@ -110,3 +110,4 @@ const Map: React.FC<MapProps> = ({ location, zoomLevel, height }) => (
 );
 
 export default Map;
+ */

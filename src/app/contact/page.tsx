@@ -65,8 +65,8 @@ export default function Page() {
           </h1>
           <p className="mt-4 text-lg max-w-2xl">
             Whether you're a property investor, an agent, or a direct buyer,
-            we’re here to assist you. Book a tour, ask questions, or explore our
-            properties. Let’s make your dream home a reality!
+            we&apore here to assist you. Book a tour, ask questions, or explore
+            our properties. Let&apos make your dream home a reality!
           </p>
 
           <div className="mt-10 flex flex-col md:flex-row gap-10 w-full max-w-7xl">
@@ -111,7 +111,7 @@ export default function Page() {
                     Book a Tour
                   </option>
                   <option value="yes">Yes, I want to book a tour</option>
-                  <option value="no">No, I don’t want a tour</option>
+                  <option value="no">No, I don&apot want a tour</option>
                 </select>
 
                 <button
@@ -126,7 +126,7 @@ export default function Page() {
             <div className="md:w-5/12 flex flex-col gap-6 bg-white/10 p-8 rounded-lg backdrop-blur-md">
               <h2 className="text-3xl font-semibold text-white">Contact Us</h2>
               <p className="text-lg">
-                We’d love to hear from you! Contact us via email or phone, or
+                We&apod love to hear from you! Contact us via email or phone, or
                 visit our office in Abuja.
               </p>
               <div className="flex flex-col gap-3">
@@ -141,7 +141,7 @@ export default function Page() {
                 <div className="flex items-center gap-2 p-3 bg-black/40 rounded-md cursor-pointer hover:translate-y-1 transition-transform">
                   <Icon icon={locationIcon} className="w-6 h-6 text-white" />
                   <p className="text-white">
-                    A4, 29b N’djamena Crescent, Wuse 2, Abuja
+                    A4, 29b N&apodjamena Crescent, Wuse 2, Abuja
                   </p>
                 </div>
               </div>
