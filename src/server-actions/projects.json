@@ -61,5 +61,28 @@
       ],
       "slug": "terraza"
     }
+  ],
+
+  "Services": [
+    {
+      "title": "Real Estate",
+      "description": "We specialize in identifying profitable opportunities and optimizing property assets for lasting success. From residential and commercial real estate to land development, we provide end-to-end solutions to maximize value."
+    },
+    {
+      "title": "Engineering",
+      "description": "Our multidisciplinary engineering team ensures structural integrity and efficiency. We cover architectural, structural, civil, mechanical, electrical, and environmental engineering to deliver high-quality projects."
+    },
+    {
+      "title": "Investment",
+      "description": "Our tailored investment strategies align with financial goals and risk tolerance. We provide direct ownership guidance, REITs opportunities, and innovative funding models for real estate investments."
+    },
+    {
+      "title": "Consultancy",
+      "description": "We empower clients with strategic insights and market analysis. From feasibility studies to project management, we ensure informed decision-making and successful project execution."
+    },
+    {
+      "title": "Innovation",
+      "description": "We leverage technology for cutting-edge real estate solutions. From PropTech advancements to sustainability initiatives, we ensure efficient, eco-friendly, and cost-effective solutions."
+    }
   ]
 }

@@ -72,12 +72,9 @@ export default function Index() {
                     <p className={`text-lg p-5 text-white`}>
                       Transforming Real Estate Through Engineering, Consultancy,
                       and Innovation Odernix Homes stands out in the real estate
-                      sector with its unique approach that integrates advanced
-                      engineering solutions, expert consultancy services,
-                      strategic investment approaches, and innovative
-                      technologies. Our comprehensive methodology is designed to
-                      cater to our client varied needs, promote sustainable
-                      growth, and maximize project value
+                      sector.Our comprehensive methodology is designed to cater
+                      to our client's varied needs, promote sustainable growth,
+                      and maximize project value.
                     </p>
                   </div>
                 </div>

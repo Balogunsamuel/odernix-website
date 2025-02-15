@@ -7,7 +7,6 @@ import { comorant_garamond, montserrat } from "@/utils/fonts";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Contacts from "@/component/contact/contacts";
-import NextNProgress from "nextjs-progressbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +20,7 @@ export default function Index() {
   }, [playVideo]);
 
   return (
-    <div>
-      <NextNProgress color={`#321a3f`} />
+    <>
       <ul className="grid_lines w-full flex absolute z-50 justify-between">
         <li className="grid_line"></li>
         <li className="grid_line"></li>
@@ -37,18 +35,10 @@ export default function Index() {
               <div className="text-xl text-white text-center"></div>
               <div className="flex flex-col pt-16 items-start">
                 <div className={comorant_garamond.className}>
-                  <h1 className="home_main_text">
-                  Welcome to Odernix Homes
-                    <br />
-                    Buildings to
-                    <br />
-                    Choose from
-                  </h1>
+                  <h1 className="home_main_text">Welcome to Odernix Homes</h1>
                 </div>
-                <Link
-                  href="/contact"
-                  onClick={() => (window.location.href = "/contact")}
-                >
+
+                <Link href="/contact">
                   <div
                     className={`items-center border-l-2 border-white flex mt-10 flex backdrop-blur-sm bg-white/30`}
                   >
@@ -80,42 +70,12 @@ export default function Index() {
                     className={`items-center border-l-2 border-white flex  w-80 flex backdrop-blur-sm bg-white/30`}
                   >
                     <p className={`text-lg p-5 text-white`}>
-                      Travelers today seek more than just a place to stay – they
-                      crave an experience that is beyond the ordinary.
+                      Transforming Real Estate Through Engineering, Consultancy,
+                      and Innovation Odernix Homes stands out in the real estate
+                      sector.Our comprehensive methodology is designed to cater
+                      to our client's varied needs, promote sustainable growth,
+                      and maximize project value.
                     </p>
-                    {/* Contact Form */}
-                    {/*  <form
-                      action="https://formspree.io/f/mpwqlobp"
-                      method="POST"
-                      className="w-full flex flex-col space-y-3"
-                    >
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                        className="p-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-white bg-white/80 text-black"
-                      />
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                        required
-                        className="p-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-white bg-white/80 text-black"
-                      />
-                      <textarea
-                        name="message"
-                        placeholder="Your Message"
-                        required
-                        className="p-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-white bg-white/80 text-black"
-                      ></textarea>
-                      <button
-                        type="submit"
-                        className="bg-white text-black p-2 rounded-md hover:bg-gray-200"
-                      >
-                        Submit
-                      </button>
-                    </form> */}
                   </div>
                 </div>
               </div>
@@ -135,6 +95,6 @@ export default function Index() {
           <source src="/head_video2.mp4" type="video/mp4" />
         </video>
       </section>
-    </div>
+    </>
   );
 }
