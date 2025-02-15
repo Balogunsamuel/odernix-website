@@ -76,7 +76,7 @@ export default function Index() {
                       engineering solutions, expert consultancy services,
                       strategic investment approaches, and innovative
                       technologies. Our comprehensive methodology is designed to
-                      cater to our client's varied needs, promote sustainable
+                      cater to our client&apos varied needs, promote sustainable
                       growth, and maximize project value
                     </p>
                   </div>
