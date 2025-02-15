@@ -45,11 +45,13 @@ function About(props: {}) {
                 </h1>
               </div>
               <p className={`text-lg p-5 text_main_color`}>
-                At Odernix Homes, we deliver top-tier real estate services with
-                expertise and integrity. We offer a diverse array of real estate
-                services for both residental and commercial properties. Our team
-                of experts is committed to guiding you through every step of
-                your property journey, be it selling, or renting.{" "}
+                Transforming Real Estate Through Engineering, Consultancy, and
+                Innovation Odernix Homes stands out in the real estate sector
+                with its unique approach that integrates advanced engineering
+                solutions, expert consultancy services, strategic investment
+                approaches, and innovative technologies. Our comprehensive
+                methodology is designed to cater to our client's varied needs,
+                promote sustainable growth, and maximize project value.{" "}
               </p>
             </div>
             <div className="md:w-5/12 flex justify-end">
@@ -84,7 +86,7 @@ function About(props: {}) {
                 img: img2,
                 name: "The Bastion",
                 location: "Plot 578, Durumi District, Abuja",
-                type: "Semi-detached & Terraces",
+                type: "Semis-detached",
               },
               {
                 img: img3,
@@ -145,7 +147,7 @@ function About(props: {}) {
                     </div>
                     <div>
                       <p className="text-sm">Bath</p>
-                      <p className="text-lg font-semibold">3</p>
+                      <p className="text-lg font-semibold">5</p>
                     </div>
                     <div>
                       <p className="text-sm">Square Feet</p>

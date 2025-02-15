@@ -16,12 +16,16 @@ export default function Index() {
   const onClick = () => setPlayVideo(true);
 
   useLayoutEffect(() => {
-    if (videoRef.current) videoRef.current.play();
+    if (videoRef.current) {
+      videoRef.current
+        .play()
+        .catch((err) => console.warn("Video play error:", err));
+    }
   }, [playVideo]);
 
   return (
     <>
-      <ul className="grid_lines w-full flex absolute z-50 justify-between">
+      <ul className="grid_ligrid_lines w-full flex absolute z-50 justify-between pointer-events-none">
         <li className="grid_line"></li>
         <li className="grid_line"></li>
         <li className="grid_line"></li>
@@ -40,7 +44,7 @@ export default function Index() {
 
                 <Link href="/contact">
                   <div
-                    className={`items-center border-l-2 border-white flex mt-10 flex backdrop-blur-sm bg-white/30`}
+                    className={`clickable items-center border-l-2 border-white flex mt-10 flex backdrop-blur-sm bg-white/30`}
                   >
                     <div className={montserrat.className}>
                       <p className={`text-lg px-5 pr-40 text-white`}>
@@ -72,7 +76,7 @@ export default function Index() {
                     <p className={`text-lg p-5 text-white`}>
                       Transforming Real Estate Through Engineering, Consultancy,
                       and Innovation Odernix Homes stands out in the real estate
-                      sector.Our comprehensive methodology is designed to cater
+                      sector. Our comprehensive methodology is designed to cater
                       to our client's varied needs, promote sustainable growth,
                       and maximize project value.
                     </p>

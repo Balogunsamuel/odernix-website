@@ -88,7 +88,7 @@ export default function Footer() {
                   <div className={montserrat.className}>
                     <p className={`py-5 text-xl`}>
                       Real Estate Development <br />
-                      Enigineering <br /> Consultancy <br /> Investments <br />{" "}
+                      Engineering <br /> Consultancy <br /> Investments <br />{" "}
                       Innovations{" "}
                     </p>
                     <p className={`mt-10 text-sm`}>
