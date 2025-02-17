@@ -64,9 +64,11 @@ export default function Page() {
             </div>
           </h1>
           <p className="mt-4 text-lg max-w-2xl">
-            Whether you’re a property investor, an agent, or a direct buyer, we
-            are here to assist you. Book a tour, ask questions, or explore our
-            properties. Lets make your dream home a reality!
+            Whether you’re a property investor, an agent, or a prospective
+            buyer, we’re here to support you every step of the way. Schedule a
+            tour, ask any questions, or explore our diverse selection of
+            properties and services. Let us help you turn your dream
+            home into a reality!
           </p>
 
           <div className="mt-10 flex flex-col md:flex-row gap-10 w-full max-w-7xl">

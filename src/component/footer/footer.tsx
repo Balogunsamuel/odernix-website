@@ -112,7 +112,7 @@ export default function Footer() {
                       Innovations{" "}
                     </p>
                     <p className={`mt-10 text-sm`}>
-                      © All rights reserved to Odernix home |{" "}
+                      ©2025 All rights reserved to Odernix home |{" "}
                       <Link href="/" className={`underline`}>
                         Privacy policy
                       </Link>{" "}

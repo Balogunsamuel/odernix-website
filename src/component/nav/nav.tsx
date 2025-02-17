@@ -45,14 +45,7 @@ export default function Nav({ style }: navigate) {
               <Image src={logo} alt={""} />
             </Link>
           </div>
-          <div className={` alignCenter`}>
-            <GiHamburgerMenu
-              className={`cursor-pointer hamburger-menu text-white text-2xl text-sub`}
-              onClick={() => setOpenNav(!openNav)}
-            />
-          </div>
-
-          <div className={`hidden md:flex`}>
+          <div className={`hidden md:flex ml-auto`}>
             <div
               className={`flex gap-2 alignCenter items-center border-l-2 border-white backdrop-blur-sm bg-white/30`}
             >
@@ -61,6 +54,17 @@ export default function Nav({ style }: navigate) {
                   <p className={`text-white text-xl cursor-pointer`}>Contact</p>
                 </Link>
               </div>
+            </div>
+          </div>
+
+          <div
+            className={`flex gap-2 alignCenter items-center border-l-2 border-white backdrop-blur-sm bg-white/30`}
+          >
+            <div className={` alignCenter`}>
+              <GiHamburgerMenu
+                className={`cursor-pointer hamburger-menu text-white text-2xl text-sub`}
+                onClick={() => setOpenNav(!openNav)}
+              />
             </div>
           </div>
           {openNav && (

@@ -15,7 +15,7 @@ function Contacts() {
         <br />
         <span className="font-semibold">Head Office Address:</span> 29B
         N’Djamena crescent, off Aminu Kano Crescent, Wuse 2<br />
-        ©2024, 0dernix is authorized and regulated.
+        ©2025, 0dernix is authorized and regulated.
       </p>
     </div>
   );
