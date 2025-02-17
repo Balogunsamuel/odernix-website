@@ -7,6 +7,7 @@ import img8 from "../../../public/img8.png";
 import logo2 from "../../../public/logo-s-dark.png";
 import frame227 from "../../../public/frame227.png";
 import { montserrat } from "@/utils/fonts";
+import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 React.useLayoutEffect = React.useEffect;
 interface navigate {
@@ -69,18 +70,37 @@ export default function Footer() {
                       </div>
                     </div>
                     <div className={montserrat.className}>
-                      <div className={`flex flex-col gap-2`}>
-                        <Link href="https://www.instagram.com/odernixhomes/">
-                          INSTAGRAM
+                      <div className="flex flex-col gap-2">
+                        <Link
+                          href="https://www.instagram.com/odernixhomes/"
+                          className="flex items-center gap-2 hover:underline"
+                          target="_blank"
+                        >
+                          <Instagram className="w-5 h-5 text-pink-500" />
+                          Instagram
                         </Link>
-                        <Link href="https://m.facebook.com/profile.php/?id=61552290001830&name=xhp_nt__fb__action__open_user">
-                          FACEBOOK
+                        <Link
+                          href="https://m.facebook.com/profile.php/?id=61552290001830&name=xhp_nt__fb__action__open_user"
+                          className="flex items-center gap-2 hover:underline"
+                          target="_blank"
+                        >
+                          <Facebook className="w-5 h-5 text-blue-600" />
+                          Facebook
                         </Link>
-                        <Link href="https://x.com/odernixhomes/status/1697532380557283552?s=46&t=gb-U55UG8h08BivbQobz1w">
-                          X(TWITTER)
+                        <Link
+                          href="https://x.com/odernixhomes/status/1697532380557283552?s=46&t=gb-U55UG8h08BivbQobz1w"
+                          className="flex items-center gap-2 hover:underline"
+                          target="_blank"
+                        >
+                          <Twitter className="w-5 h-5 text-black" />X (Twitter)
                         </Link>
-                        <Link href="https://www.youtube.com/@OdernixHomes">
-                          YOUTUBE
+                        <Link
+                          href="https://www.youtube.com/@OdernixHomes"
+                          className="flex items-center gap-2 hover:underline"
+                          target="_blank"
+                        >
+                          <Youtube className="w-5 h-5 text-red-600" />
+                          YouTube
                         </Link>
                       </div>
                     </div>

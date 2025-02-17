@@ -64,7 +64,7 @@ export default function Page() {
             </div>
           </h1>
           <p className="mt-4 text-lg max-w-2xl">
-            Whether youre a property investor, an agent, or a direct buyer, we
+            Whether you’re a property investor, an agent, or a direct buyer, we
             are here to assist you. Book a tour, ask questions, or explore our
             properties. Lets make your dream home a reality!
           </p>
@@ -111,7 +111,7 @@ export default function Page() {
                     Book a Tour
                   </option>
                   <option value="yes">Yes, I want to book a tour</option>
-                  <option value="no">No, I don&apo;t want a tour</option>
+                  <option value="no">No, I don’t want a tour</option>
                 </select>
 
                 <button
@@ -141,7 +141,7 @@ export default function Page() {
                 <div className="flex items-center gap-2 p-3 bg-black/40 rounded-md cursor-pointer hover:translate-y-1 transition-transform">
                   <Icon icon={locationIcon} className="w-6 h-6 text-white" />
                   <p className="text-white">
-                    A4, 29b Njamena Crescent, Wuse 2, Abuja
+                    A4, 29b N’Djamena Crescent, Wuse 2, Abuja
                   </p>
                 </div>
               </div>

@@ -256,7 +256,7 @@ function Terreza({ params }: any) {
                         {project.projectDetails}
                       </p>
                     </div>
-                    <Link href={""}>
+                    <Link href={"/odernix-homes-brochure.pdf"}>
                       <div
                         className={`items-center border-l-2 border-white flex mt-10 backdrop-blur-sm bg-white/30`}
                       >
