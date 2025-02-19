@@ -106,11 +106,11 @@ export default function Footer() {
                     </div>
                   </div>
                   <div className={montserrat.className}>
-                    <p className={`py-5 text-xl`}>
+                    {/* <p className={`py-5 text-xl`}>
                       Real Estate Development <br />
                       Engineering <br /> Consultancy <br /> Investments <br />{" "}
                       Innovations{" "}
-                    </p>
+                    </p> */}
                     <p className={`mt-10 text-sm`}>
                       ©2025 All rights reserved to Odernix home |{" "}
                       <Link href="/" className={`underline`}>

@@ -74,6 +74,15 @@ function Projects(props: {}) {
         {/*    <li className="grid_line"></li>*/}
         {/*    <li className="grid_line"></li>*/}
         {/*</ul>*/}
+        <section className="relative flex flex-col items-center justify-center text-white bg-main py-32 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold"> Our Projects</h1>
+          <p className="mt-5 text-lg md:text-xl max-w-3xl">
+            We invest across Nigeria, focusing on Locations where our team has
+            experience and where there is scope to aggregate assets in our
+            target sectors. Wherever we invest, we partner with highly skilled
+            management teams to build leading real estate businesses.
+          </p>
+        </section>
         <section className=" relative flex flex-col items-center justify-center overflow-hidden ">
           <div className="relative h-full w-full z-30  text-2xl text-white bg-main bg-opacity-50">
             <div className="flex flex-row mt-20 h-full container z-20 mx-auto relative"></div>
@@ -84,7 +93,7 @@ function Projects(props: {}) {
             <div className="flex flex-col px-3 md:px-0 md:flex-row h-full container z-20 mx-auto relative">
               <div className="md:w-7/12  h-full flex flex-col justify-between">
                 <div className="text-xl text-center"></div>
-                <div className="flex flex-col items-start">
+                {/* <div className="flex flex-col items-start">
                   <div className={comorant_garamond.className}>
                     <h1 className="text-5xl md:text-7xl text_main_color">
                       Our Projects
@@ -99,7 +108,7 @@ function Projects(props: {}) {
                       leading real estate businesses.
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className=" h-full flex justify-end w-full md:w-5/12">
                 <div className={`absolute right-0 top-20`}>
