@@ -3,54 +3,80 @@
     {
       "id": 1,
       "name": "The Bastion",
-      "sub": "The Touch of Paradice",
-      "description": "The Bastion transcends mere linguistic symbolism; It is an emblematic embodiment of impregnable security, a testament to an unyielding fortress of protection. Within the confines of our intricately crafted abodes, this essence is lovingly encapsulated, bequeathing upon us a serene sanctuary amidst the tapestry of urban life.",
+      "sub": "Redefining Urban Security and Elegance",
+      "subAlt": "Fortified Living with Architectural Grace",
+      "description": "The Bastion represents more than a name—it signifies an enduring symbol of strength and security. Designed as a fortress of modern living, it offers a peaceful retreat amid the dynamic pulse of urban life. Each residence is thoughtfully crafted to reflect safety, comfort, and architectural excellence.",
       "address": "Durumi, Abuja",
       "lat": 9.0223,
       "lng": 7.4671,
-      "status": "to be completed by 2025",
+      "status": "Scheduled for completion in 2025",
       "image": "/bastion.jpg",
-      "subAlt": "Elegance and Comfort",
-      "projectDetails": "4 Bedrooms Semi Detached Duplexes + BQ",
-      "deliveryDate": "4th quarter 2025",
+      "projectDetails": "4-Bedroom Semi-Detached Duplexes with BQ",
+      "deliveryDate": "4th Quarter 2025",
       "projectType": "Residential",
-      "propertyNumber": "8 uints",
+      "propertyNumber": "8 units",
       "propertyType": ["Duplex", "Terrace"],
       "gallery": ["/bastion3.jpg", "/basttion5.jpg"],
       "slug": "the-bastion"
     },
     {
       "id": 2,
-      "name": "The Bastion 2",
-      "sub": "The Touch of Paradice",
-      "description": " A Modern Oasis of Flats Living! It’s an eloquent block of flats with a police post. It is highly secured\n                                            with fabulous estate features in a beautiful community. It has 16 units of\n                                            3-bedroom apartments and 12 flats of 2-bedroom apartments 4 flats.",
+      "name": "The Bastion (Apartments)",
+      "sub": "Modern Living in a Secured Vertical Community",
+      "subAlt": "Smart Design Meets Comfortable Living",
+      "description": "A modern apartment development featuring secure access and a dedicated police post, this estate boasts superior amenities in a well-planned residential community. It comprises 16 units of 3-bedroom apartments and 12 units of 2-bedroom apartments, each with a BQ and elevator access.",
       "address": "Durumi, Abuja",
       "lat": 9.0223,
       "lng": 7.4671,
-      "status": "to be completed by 2025",
+      "status": "Scheduled for completion in 2025",
       "image": "/bastion2.jpg",
-      "subAlt": "Elegance and Comfort",
-      "projectDetails": "3 Bedroom Apartment with BQ and elevator & 2 Bedroom Apartment with BQ and elevator",
-      "deliveryDate": "4th quarter 2025",
+      "projectDetails": "3-Bedroom Apartments with BQ & Elevator | 2-Bedroom Apartments with BQ & Elevator",
+      "deliveryDate": "4th Quarter 2025",
       "projectType": "Residential",
       "propertyNumber": "16 units",
       "propertyType": ["Apartments"],
       "gallery": ["/bastion4.jpg", "/bastion6.jpg"],
-      "slug": "the-bastion-2"
+      "slug": "the-bastion-apartments"
     },
     {
       "id": 3,
+      "name": "The Bastion 2",
+      "sub": "Next-Generation Apartments for Elevated Lifestyles",
+      "subAlt": "Versatile Units with Lift and Modern Finishes",
+      "description": "An expanded modern apartment complex featuring enhanced security and community-centered living. This project offers 16 units of 3-bedroom apartments, 12 units of 2-bedroom apartments, and 4 additional flats, all designed for contemporary lifestyles with integrated BQs and elevator access.",
+      "address": "Durumi, Abuja",
+      "lat": 9.0223,
+      "lng": 7.4671,
+      "status": "Scheduled for completion in 2026",
+      "image": "/Presentation-5.jpg",
+      "projectDetails": "3-Bedroom Apartments with BQ | 2-Bedroom Apartments with BQ | Elevator Access",
+      "deliveryDate": "2026",
+      "projectType": "Residential",
+      "propertyNumber": "41 units",
+      "propertyType": ["Apartments", "Terrace", "Duplex"],
+      "gallery": [
+        "/Presentation-1.jpg",
+        "/Presentation-2.jpg",
+        "/Presentation-3.jpg",
+        "/Presentation-4.jpg",
+        "/Presentation-6.jpg",
+        "/Presentation-7.jpg"
+      ],
+      "slug": "the-bastion-2"
+    },
+    {
+      "id": 4,
       "name": "Terraza",
-      "sub": "The Touch of Paradice",
-      "description": "With Ardent Italian inspiration, Terraza exemplifies thesublime essence of outdoor living, masterfully entwiningthe splendour of nature with the essence of refineddwelling. Within our residences, one discovers an array ofresplendent terraces, veritable havens where the soul mayluxuriate in the enchanting vista of the world's untamedmagnificence while being cradled in the embrace of theirown cherished abode.",
+      "sub": "Terrace-Inspired Living in the Heart of the City",
+      "subAlt": "Blending Outdoor Charm with Modern Style",
+      "description": "Inspired by classic Italian architecture, Terraza celebrates outdoor living by harmonizing natural surroundings with modern residential design. The homes feature expansive terraces designed as serene outdoor retreats, where residents enjoy panoramic views while experiencing the tranquility of their personal space.",
       "address": "Durumi, Abuja",
       "lat": 9.0223,
       "lng": 7.4671,
       "status": "Completed",
       "image": "/terraza.jpg",
-      "subAlt": "Elegance and Comfort",
-      "projectDetails": "Our project, The Terrazza by Odernix Homes, is an apartment complex developed at Plot 642 Durumi, Federal Capital TerritoryAbuja. The Terrazza by Odernix Homes includes the construction of two separate buildings: a semi-detached terrace building with two units and another terrace building with four units for six (6) units. It started in September 2023 and completed in November 2024.",
-      "deliveryDate": "4th quarter 2024",
+      "projectDetails": "Developed by Odernix Homes, Terraza consists of a residential complex on Plot 642, Durumi. It includes two buildings: a two-unit semi-detached terrace and a four-unit terrace building—making a total of six (6) residential units. Construction commenced in September 2023 and was completed in November 2024.",
+      "deliveryDate": "4th Quarter 2024",
       "projectType": "Residential",
       "propertyNumber": "6 units",
       "propertyType": ["Duplex", "Terrace"],
@@ -66,23 +92,23 @@
   "Services": [
     {
       "title": "Real Estate",
-      "description": "We specialize in identifying profitable opportunities and optimizing property assets for lasting success. From residential and commercial real estate to land development, we provide end-to-end solutions to maximize value."
+      "description": "We specialize in identifying high-return investment opportunities and optimizing real estate assets. Our services span residential, commercial, and land development, delivering end-to-end property solutions tailored for long-term value."
     },
     {
       "title": "Engineering",
-      "description": "Our multidisciplinary engineering team ensures structural integrity and efficiency. We cover architectural, structural, civil, mechanical, electrical, and environmental engineering to deliver high-quality projects."
+      "description": "Our multidisciplinary team delivers robust engineering solutions across all stages of development. From architectural and structural design to MEP and environmental engineering, we ensure every project meets the highest standards of safety and performance."
     },
     {
       "title": "Investment",
-      "description": "Our tailored investment strategies align with financial goals and risk tolerance. We provide direct ownership guidance, REITs opportunities, and innovative funding models for real estate investments."
+      "description": "We craft tailored investment strategies aligned with client goals and market dynamics. Our offerings include direct real estate ownership, REITs, and alternative funding models designed to maximize financial returns."
     },
     {
       "title": "Consultancy",
-      "description": "We empower clients with strategic insights and market analysis. From feasibility studies to project management, we ensure informed decision-making and successful project execution."
+      "description": "Our advisory services empower stakeholders through strategic planning, feasibility analysis, and risk management. We support project execution with data-driven insights, ensuring successful outcomes across all project phases."
     },
     {
       "title": "Innovation",
-      "description": "We leverage technology for cutting-edge real estate solutions. From PropTech advancements to sustainability initiatives, we ensure efficient, eco-friendly, and cost-effective solutions."
+      "description": "We harness emerging technologies to drive efficiency and sustainability in the built environment. Through PropTech solutions and green initiatives, we offer smart, cost-effective innovations that future-proof real estate assets."
     }
   ]
 }
